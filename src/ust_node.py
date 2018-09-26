@@ -101,7 +101,7 @@ if __name__ == "__main__":
     frame = str(rospy.get_param('~frame_id', "laser_link"))
     offset = float(rospy.get_param('~offset', 0))
     max_angle = float(rospy.get_param('~max_angle', 1.178097245))
-    min_angle = float(rospy.get_param('~max_angle', -1.178097245))
+    min_angle = float(rospy.get_param('~min_angle', -1.178097245))
     port = str(rospy.get_param('~dev', "/dev/ttyACM0"))
     
     link_tf_id = str(rospy.get_param('~link_tf_id', "world"))
