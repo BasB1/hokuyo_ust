@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+  <node pkg="hokuyo_ust" type="ust_node.py" name="ust_node" output="screen">
+    <param name="frame_id" value="/dev/ttyACM0"/>
+    <param name="frame_id" value="laser_link"/>
+    <param name="topic_name" value="/scan"/>
+    <param name="link_tf_id" value="world"/>
+    <param name="link_tf_param" value="0.0, 0.0, 0, 0, 0, 0"/>
+    <param name="offset" value="-1.12"/>
+  </node>
+</launch>
